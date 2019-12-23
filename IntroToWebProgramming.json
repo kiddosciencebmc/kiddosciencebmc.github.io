@@ -1,0 +1,59 @@
+{
+    "name": "Web Programming 101",
+    "range": "12 weeks",
+    "result": "build static page/profile/landing page with bootstrap",
+    "skills": [
+        "basic git skill (commit and push)",
+        "ablet to use fundamentals of bootstrap lib "
+    ],
+    "classes": {
+        "week_1": {
+            "part_1": "Intro to web programming (with git)",
+            "part_2": "Intro to bootstrap library"
+        },
+        "week_2": {
+            "part_1": "Containers",
+            "part_2": "Grids"
+        },
+        "week_3": {
+            "part_1": "Typography Part 1",
+            "part_2": "Colors"
+        },
+        "week_4": {
+            "part_1": "Images",
+            "part_2": "Tables"
+        },
+        "week_5": {
+            "part_1": "Button",
+            "part_2": "Progress Bar"
+        },
+        "week_6": {
+            "part_1": "NavBar",
+            "part_2": "Jumbotron"
+        },
+        "week_7": {
+            "part_1": "Alert",
+            "part_2": "Modal"
+        },
+        "week_8": {
+            "part_1": "Typography Part 2",
+            "part_2": "Forms Part 1 (create simple input form)"
+        },
+        "week_9": {
+            "part_1": "Forms Part 2 (introduce different kinds of forms)",
+            "part_2": "Forms Part 3 (construct a complete form)"
+        },
+        "week_10": {
+            "part_1": " ",
+            "part_2": ""
+        },
+        "week_11": {
+            "part_1": "",
+            "part_2": ""
+        },
+        "week_12": {
+            "part_1": "",
+            "part_2": ""
+        }
+    }
+}

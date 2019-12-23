@@ -18,12 +18,23 @@
     />
   </head>
   <body>
-    <h1>Hello World</h1>
+    <div class="container">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-3" id="name"></h1>
+          <p class="lead" id="weekNo"></p>
+          <hr class="my-2" />
+          <div class="container">
+            <div class="row" id="class_content"></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
     <script
@@ -36,5 +47,81 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(function() {
+        var data = {
+          name: "Web Programming 101",
+          range: "12 weeks",
+          result: "build static page/profile/landing page with bootstrap",
+          skills: [
+            "basic git skill (commit and push)",
+            "ablet to use fundamentals of bootstrap lib "
+          ],
+          classes: [
+            {
+              part_1: "Intro to web programming (with git)",
+              part_2: "Intro to bootstrap library"
+            },
+            {
+              part_1: "Containers",
+              part_2: "Grids"
+            },
+            {
+              part_1: "Typography Part 1",
+              part_2: "Colors"
+            },
+            {
+              part_1: "Images",
+              part_2: "Tables"
+            },
+            {
+              part_1: "Button",
+              part_2: "Progress Bar"
+            },
+            {
+              part_1: "NavBar",
+              part_2: "Jumbotron"
+            },
+            {
+              part_1: "Alert",
+              part_2: "Modal"
+            },
+            {
+              part_1: "Typography Part 2",
+              part_2: "Forms Part 1 (create simple input form)"
+            },
+            {
+              part_1: "Forms Part 2 (introduce different kinds of forms)",
+              part_2: "Forms Part 3 (construct a complete form)"
+            },
+            {
+              part_1: " ",
+              part_2: ""
+            },
+            {
+              part_1: "",
+              part_2: ""
+            },
+            {
+              part_1: "",
+              part_2: ""
+            }
+          ]
+        };
+        $("#name").html(data.name);
+        $("#weekNo").html(data.range);
+        data.classes.forEach(function(cls, index) {
+          var htmlString =
+            '<div class="col-md-6 col-sm-12"><h5><u>Week ' +
+            (index + 1) +
+            "</u></h5><p>" +
+            cls.part_1 +
+            "</p><p>" +
+            cls.part_2 +
+            "</p></div>";
+          $("#class_content").append(htmlString);
+        });
+      });
+    </script>
   </body>
 </html>
